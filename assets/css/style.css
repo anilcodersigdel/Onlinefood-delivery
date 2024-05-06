@@ -141,6 +141,7 @@ header{
 .clients{
    padding-top: 23px;
    display: flex;
+   gap: 7px;
 }
 .clients img{
    height: 300px;
@@ -236,6 +237,7 @@ footer{
       width: 100%;
    }
    .clients{
+      gap: 8px;
       flex-wrap: wrap;
    }
 
@@ -268,7 +270,7 @@ footer{
        }
       
           footer{
-            padding: 0;
+            padding: 10px 0;
             width: 100%;
           }
           .box img {
@@ -279,9 +281,10 @@ footer{
         }
         #services-container{
          padding: 27px;
+         padding-bottom: 0;
         }
         #client-section{
-         padding-top: 28;
+         padding: 27px;
         }
         #contact h1{
          padding: 1.5rem;
@@ -290,7 +293,13 @@ footer{
          width: 70%;
         }
         .clients{
+         display: block;
+         /* gap: 7px; */
+         /* display: flex; */
          padding-top: 0;
+        }
+        .btn1{
+         margin: 11px;
         }
     }
 
