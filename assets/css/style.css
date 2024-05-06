@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    font-size: 100%;
+} */
+body{
+    overflow-x: hidden;
+}
+
+
+.hero{
+    /* position: relative; */
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../images/bg.jpg) center/cover no-repeat fixed;
+
+}
+.btn{
+   padding: 11px;
+   margin-top: 13px;
+   border: 1px solid orange;
+   border-radius: 7px;
+   font-size: 1.1rem;
+}
+.btn:hover{
+   background-color: navy;
+   color: white;
+}
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+ nav{
+    padding: 7px;
+    background-color: rgb(68, 138, 68 , 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+ }
+ /* nav .logo{
+    margin: 5px 8px;
+ } */
+ nav img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+ }
+ nav ul{
+    width: 50%;
+   display: flex;
+   justify-content: space-around;
+ }
+ nav ul li {
+    list-style-type: none;
+
+ }
+
+ nav ul li a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    text-decoration: none;
+ }
+ nav ul li a:hover{
+   border-bottom: 2px solid #f2f7f6;
+ }
+
+
+ .mobile_menu{
+   width:100%;
+   display: none;
+   height: 40px;
+   line-height: 40px;
+   background-color: rgb(16, 124, 88);
+ }
+ .mobile_menu ul{
+   display: flex;
+   justify-content: space-around;
+ }
+ .mobile_menu ul li{
+      list-style-type: none;
+ }
+ .mobile_menu ul li a{
+   text-decoration: none;
+   color: white;
+ }
+
+
+ /* Services section */
+
+ #services-container{
+    padding-top: 50px;
+    text-align: center;
+    /* justify-content: center; */
+      
+ }
+ .services{
+   padding: 22px;
+   display: flex;
+   gap : 1.5rem;
+ }
+
+ .services h2{
+    font-size: 1.8rem;
+
+ }
+ .services p{
+   text-align: justify;
+   /* padding: 8px; */
+   font-size: 1.2rem;
+ }
+ .box{
+   padding: 8px;
+   background-color: #eaecec;
+   border: 2px solid rgb(167, 6, 6);
+   border-radius: 11px;
+ }
+.box img{
+     height: 300px;
+     width: 300px;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+/* client section   */
+
+
+#client-section{
+   padding: 50px;
+   text-align: center;
+}
+.clients{
+   padding-top: 23px;
+   display: flex;
+}
+.clients img{
+   height: 300px;
+   width: 400px;
+   object-fit: contain;
+}
+
+/* contact section */
+
+#contact{
+   width: 100%;
+   padding: 60px;
+   color: white;
+   background: url("../images/contact.jpg") center/cover no-repeat fixed;
+}
+
+#contact h1{
+   text-align: center;
+}
+
+
+.contact-box{
+   justify-content: center;
+   align-self: center;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.form-group{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+   /* justify-content: flex-start; */
+} 
+
+label, textarea {
+   font-size: 1.2rem;
+}
+input{
+   padding: 3px 2px;
+}
+.btn1{
+   margin-top: 11px;
+   padding: 5px 23px;
+   border-radius: 9px;
+   border: none;
+   font-size: 1.1rem;
+   cursor: pointer;
+
+}
+.btn1:hover{
+   background-color: navy;
+   color: white;
+}
+
+/* footer section */
+
+footer{
+   text-align: center;
+   background-color: #eaecec;
+   color: black;
+   padding: 10px;
+}
+
+
+
+
+/* utility classes */
+
+
+ .h-primary{
+   font-size: 2.5rem;
+   padding-bottom: 1.3rem;
+ }
+
+ .p-primary{
+   font-size: 1.5rem;
+ }
+
+
+
+
+ @media screen and (max-width: 768px){
+   .services{
+      flex-wrap: wrap;
+      padding: 0;
+      width: 100%;
+   }
+   .clients{
+      flex-wrap: wrap;
+   }
+
+   .h-primary{
+      font-size: 1.7rem;
+   }
+   .p-primary{
+      font-size: 1.1rem;
+    }
+    .mobile_menu{
+      display: block;
+    }
+    nav{
+      justify-content: center;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+    }
+    .hero{
+      width: 100%;
+    }
+      .clients img{
+         height: 200px;
+         width: 200px;
+         object-fit: contain;
+      }
+      #contact{
+         padding: 0;
+       }
+      
+          footer{
+            padding: 0;
+            width: 100%;
+          }
+          .box img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #services-container{
+         padding: 27px;
+        }
+        #client-section{
+         padding-top: 28;
+        }
+        #contact h1{
+         padding: 1.5rem;
+        }
+        .form-group {
+         width: 70%;
+        }
+        .clients{
+         padding-top: 0;
+        }
+    }
+
