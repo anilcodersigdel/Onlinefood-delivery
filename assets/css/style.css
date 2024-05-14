@@ -270,6 +270,7 @@ footer{
        }
       
           footer{
+            font-size: 0.9rem;
             padding: 10px 0;
             width: 100%;
           }
